@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Corporate" xml:space="preserve">
+    <value>Corporate</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>November 21, 2020</value>
+  </data>
+  <data name="LonelyTrip" xml:space="preserve">
+    <value>It was going to be a lonely trip back.</value>
+  </data>
+  <data name="LoremText1" xml:space="preserve">
+    <value>&lt;p&gt;Our company, established in 1989 in the Arifiye District of Sakarya, started its operations with the production and sale of seasonal flowers on a 300 m² area. Over time, it has grown to become one of the leading brands in the sector.&lt;/p&gt;
+
+&lt;p&gt;As of today, with a production area approaching 2,500,000 m² and a vast range of thousands of plant varieties, we have become the leading organization in the industry.&lt;/p&gt;
+
+&lt;p&gt;Our production, carried out with the latest advancements in modern technology, is located in one of the world’s most favorable ecological regions, the Sakarya Basin, encompassing Arifiye, Pamukova, and Yazlık districts.&lt;/p&gt;
+
+&lt;p&gt;Arifiye Fidancılık has played an active role in the establishment and development of Turkey’s first organized outdoor ornamental plants production zone, which was initiated in Sakarya Province, and proudly holds a place within this organized zone. Our company, which holds a significant position in the Turkish market, primarily serves municipalities, landscaping, and construction companies.&lt;/p&gt;
+
+&lt;p&gt;Committed to contributing to the sector's progress in exports, Arifiye Fidancılık has been instrumental in shaping the current export regulations. While maintaining a strong position in the domestic market, Arifiye Fidancılık has also demonstrated its success in international markets. Since 2001, we have expanded into foreign markets, strengthening our trade with Turkic Republics, Russia, and Arab countries.&lt;/p&gt;
+
+&lt;p&gt;Arifiye Fidancılık’s vision is to maintain and elevate its leadership position in Turkey and its standing on the international stage. Our company prioritizes quality production and customer satisfaction in the field of outdoor ornamental plants. We invite you to our nursery to witness how we nurture plants from the smallest sapling to a full-grown tree in all their vibrant colors. It would be an honor to welcome you to our nursery, showroom, and the fairs and events we participate in.&lt;/p&gt;</value>
+  </data>
+  <data name="LoremHeader" xml:space="preserve">
+    <value>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</value>
+  </data>
+  <data name="GrowingCapacity" xml:space="preserve">
+    <value>Growing capacity with&lt;br&gt; our increasing production.</value>
+  </data>
+  <data name="FutureGoal" xml:space="preserve">
+    <value>Targeting more production&lt;br&gt; for the future.</value>
+  </data>
+  <data name="Experience" xml:space="preserve">
+    <value>35 Years of Experience</value>
+  </data>
+  <data name="ProductionArea" xml:space="preserve">
+    <value>Production Areas</value>
+  </data>
+  <data name="ExportedSeedlings" xml:space="preserve">
+    <value>980 Thousand Seedlings Exported</value>
+  </data>
+  <data name="CompanyDescription" xml:space="preserve">
+    <value>Founded in 1989, our company works every day to renew itself to provide better service to you. With over 900 product varieties and exports to 25 countries, we trust our experience and products.</value>
+  </data>
+  <data name="ProductionAreaHeader" xml:space="preserve">
+    <value>3000 Acres</value>
+  </data>
+  <data name="ProductionAreaDescription" xml:space="preserve">
+    <value>Our production areas</value>
+  </data>
+  <data name="TotalProductionArea" xml:space="preserve">
+    <value>With over 3,000 production areas, our growing capacity targets more production for the future.</value>
+  </data>
+  <data name="AllProductionAreas" xml:space="preserve">
+    <value>All our production areas</value>
+  </data>
+  <data name="OurEffort" xml:space="preserve">
+    <value>Our Effort</value>
+  </data>
+  <data name="EffortDescription" xml:space="preserve">
+    <value>We may not change the world, but our effort is great!</value>
+  </data>
+  <data name="CurrentProductionArea" xml:space="preserve">
+    <value>We nurture colors in all their tones from a seedling to a large tree in our current production areas.</value>
+  </data>
+  <data name="CurrentProductionArea2" xml:space="preserve">
+    <value>As of today, we are proud to be a leading brand in the sector with our production areas exceeding approximately 3,000,000 m2 and our range of thousands of plants.</value>
+  </data>
+  <data name="LastYearExport" xml:space="preserve">
+    <value>In just the last year, we are expanding our target with 980 thousand seedlings exported to 25 different countries.</value>
+  </data>
+  <data name="ProductCatalog" xml:space="preserve">
+    <value>Product Catalog</value>
+  </data>
+  <data name="CatalogDescription" xml:space="preserve">
+    <value>This is the description of the product catalog.</value>
+  </data>
+  <data name="PromotionalFilm" xml:space="preserve">
+    <value>Arifiye Fidancılık Promotional Film</value>
+  </data>
+  <data name="FilmDescription" xml:space="preserve">
+    <value>This is the description of the promotional film.</value>
+  </data>
+  <data name="CookiesPolicy" xml:space="preserve">
+    <value>Cookies Policy</value>
+  </data>
+  <data name="CookiesDescription1" xml:space="preserve">
+    <value>
+
+    &lt;p&gt;We would like to inform you about the types of cookies used on our website, their purposes, settings, management, and deletion.&lt;/p&gt;
+
+    &lt;p&gt;You can visit our website without providing any personal information and obtain information about our products and services to meet your needs. Some cookies are used to collect information about site usage during visits. Our aim is to provide convenience to users visiting our website and improve its functionality.&lt;/p&gt;
+
+    &lt;h2 class="text-dark-green"&gt;What is a Cookie?&lt;/h2&gt;
+
+    &lt;p&gt;A cookie is a small text file recorded on your computer or mobile device through your browser when you visit a site. Cookies allow a website to work more efficiently and enable personalized pages to be served for a more suitable and faster visit experience. Cookies only contain information about your internet browsing history and do not collect any information about files stored on your computer or mobile device.&lt;/p&gt;
+
+    &lt;h2 class="text-dark-green"&gt;Cookie Types and Usage Purposes&lt;/h2&gt;
+
+    &lt;p&gt;There are two types of cookies based on their validity periods: Persistent Cookies and Temporary Cookies. Temporary cookies are created during your website visit and are valid only until you close your browser. Persistent cookies are created when you visit the website and remain until you delete them or their duration expires. Persistent cookies are used for operations such as providing a personalized experience compatible with your settings.&lt;/p&gt;
+
+    &lt;p&gt;Cookie types and usage purposes are explained below:&lt;/p&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;Mandatory Cookies:&lt;/strong&gt; Essential for the correct functioning of our website. For example, they are used for authentication and preventing the loss of current session information. These cookies are used for security and verification purposes and are not used for any marketing purposes.&lt;/li&gt;
+
+        &lt;li&gt;&lt;strong&gt;Cookies Necessary for Functionality:&lt;/strong&gt; Cookies that allow visitors to remember their preferences. For example, they help remember the visitor's language preference or text font size selection. Disabling these cookies may prevent the use of personalized features and prevent remembering your preferences.&lt;/li&gt;
+
+        &lt;li&gt;&lt;strong&gt;Performance and Analytics Cookies:&lt;/strong&gt; Cookies that help improve our website. These cookies collect information about site usage, monitor whether the site is working properly, and detect any errors.&lt;/li&gt;
+
+        &lt;li&gt;&lt;strong&gt;Targeting and Advertising Cookies:&lt;/strong&gt; These cookies are used to promote products and services on our website or other channels, show relevant and personalized advertisements with our partners, and measure the effectiveness of advertising campaigns.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h2 class="text-dark-green"&gt;How Cookies Are Collected?&lt;/h2&gt;
+
+    &lt;p&gt;Data is collected through devices you access browsers. These collected data are specific to devices. They can be deleted by the user at any time and access to information can be closed.&lt;/p&gt;
+
+    &lt;h2 class="text-dark-green"&gt;Our Privacy Policy&lt;/h2&gt;
+
+    &lt;p&gt;Your privacy is important to us, and privacy and security rights are our fundamental principle. In this context, you can access our personal data protection information disclosure text from here.&lt;/p&gt;
+
+    &lt;h2 class="text-dark-green"&gt;How Can You Control Cookies?&lt;/h2&gt;
+
+    &lt;p&gt;You can delete existing cookies on your computer and prevent cookies from being recorded/placed in your internet browser.&lt;/p&gt;
+
+    &lt;p&gt;Internet browsers are preset to automatically accept cookies. Since managing cookies varies from browser to browser, you can check the browser's or application's help menu for detailed information.&lt;/p&gt;
+
+    &lt;p&gt;For example, you can manage it with the option "Google Chrome -&gt; Settings -&gt; Advanced -&gt; Privacy and Security -&gt; Site Settings -&gt; Cookies and Site Data -&gt; Allow sites to save and read cookie data".&lt;/p&gt;
+
+    &lt;p&gt;Most internet browsers allow you to:&lt;/p&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;View saved cookies and delete the ones you want&lt;/li&gt;
+        &lt;li&gt;Block third-party cookies&lt;/li&gt;
+        &lt;li&gt;Block cookies from specific sites&lt;/li&gt;
+        &lt;li&gt;Block all cookies&lt;/li&gt;
+        &lt;li&gt;Delete all cookies when closing the browser&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;If you choose to delete cookies, your preferences on the related website will be deleted. Additionally, if you choose to completely block cookies, many websites and digital platforms, including Arifiye Fidancılık's websites, may not work properly.&lt;/p&gt;
+
+    &lt;h3 class="text-dark-green"&gt;Controlling Cookies on Mobile Devices&lt;/h3&gt;
+
+    &lt;h4 class="text-dark-green"&gt;On Apple Devices:&lt;/h4&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;You can clear your browsing history and cookies using "Settings -&gt; Safari -&gt; Clear History and Website Data" steps.&lt;/li&gt;
+        &lt;li&gt;To delete cookies while keeping your history, follow "Settings -&gt; Safari -&gt; Advanced -&gt; Website Data -&gt; Clear All Website Data".&lt;/li&gt;
+        &lt;li&gt;If you don't want to keep past data when visiting sites, activate private browsing by following "Safari -&gt; icon -&gt; Private -&gt; Done".&lt;/li&gt;
+        &lt;li&gt;You can block cookies using "Settings -&gt; Safari -&gt; Block All Cookies". However, blocking cookies may cause some websites and features to not work properly.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h4 class="text-dark-green"&gt;On Android Devices:&lt;/h4&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;You can clear your cookies using "Chrome app -&gt; Settings -&gt; Privacy -&gt; Clear browsing data -&gt; Cookies, media licenses and site data -&gt; Clear data".&lt;/li&gt;
+        &lt;li&gt;You can allow or block cookies using "Chrome App -&gt; Settings -&gt; Site Settings -&gt; Cookies".&lt;/li&gt;
+    &lt;/ul&gt;</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="ExportInfo" xml:space="preserve">
+    <value>25 countries and 980 thousand seedlings exported in 1 year</value>
+  </data>
+  <data name="ExportDescription1" xml:space="preserve">
+    <value>Founded in 1989, our company works every day to renew itself to provide better service to you.</value>
+  </data>
+  <data name="ExportDescription2" xml:space="preserve">
+    <value>With over 900 product varieties and exports to 25 countries, we trust our experience and products.</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="AddressDescription" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates!</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="PhoneNumberValue" xml:space="preserve">
+    <value>+90 555 555 55 55</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailValue" xml:space="preserve">
+    <value>info@arifiyefidancilik.com</value>
+  </data>
+  <data name="FollowUs" xml:space="preserve">
+    <value>Follow Us</value>
+  </data>
+  <data name="GetDirections" xml:space="preserve">
+    <value>Get Directions</value>
+  </data>
+  <data name="ArifiyeFidancilik" xml:space="preserve">
+    <value>Arifiye Fidancılık</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>Your Name</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>Your Email</value>
+  </data>
+  <data name="YourPhone" xml:space="preserve">
+    <value>Your Phone</value>
+  </data>
+  <data name="YourMessage" xml:space="preserve">
+    <value>Your Message</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="KVKK" xml:space="preserve">
+    <value>KVKK</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Our Quality Policy</value>
+  </data>
+  <data name="PrivacyPolicyDescription" xml:space="preserve">
+    <value>&lt;p &gt; Our service policy is to continuously follow sectoral changes, technological developments and customer-customer relations with our team-spirited staff who have adopted a quality approach based on customer satisfaction.&lt;/p&gt;
+&lt;p&gt; In addition;&lt;/p&gt;
+&lt;UL&gt;
+&lt;LI&gt;
+&lt;p &gt;Timely detection of customer reports, rapid response to demands, on-time shipment, quality product and competitive price,&lt;/p&gt;
+&lt;LI&gt;
+&lt;p&gt;High-tech follow-up management and effective use in order to ensure continuous customer satisfaction,&lt;/p&gt;
+&lt;LI&gt;
+&lt;p&gt;Adopting the understanding that all policies are responsible for quality and therefore continuing trainings that will develop flexible, knowledge and skills of all personnel quality awareness, encouraging harmony and creativity,&lt;/p&gt;
+&lt;LI&gt;
+&lt;p&gt;Maintaining personal happiness and motivation,&lt;/p&gt;
+&lt;LI&gt;
+&lt;p&gt;Measurable details in the system based on the performance regime, evaluation of quality targets, &lt;/p&gt;
+&lt;/UL&gt;
+&lt;p&gt; is our quality policy to adopt the concept of quality continuously, taking into account applicable conditions.&lt;/p&gt;
+&lt;p&gt; In this context, we aim to determine our quality targets, constantly review our targets and ensure that we spread this policy among all our employees. &lt;/p&gt;
+&lt;p&gt; &lt;BR&gt;
+&lt;/p&gt;
+
+&lt;p&gt; &lt;em&gt;&lt;strong&gt; &lt;/strong&gt;&lt;/em&gt;&lt;strong&gt;GENERAL MANAGER&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;Murat KAYA&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="DataCollectionPurposes" xml:space="preserve">
+    <value>Your personal data is collected for the following purposes:</value>
+  </data>
+  <data name="UsePurpose" xml:space="preserve">
+    <value>We use your personal data only for the specified purposes.</value>
+  </data>
+  <data name="SecurityMeasures" xml:space="preserve">
+    <value>We take all necessary precautions to ensure your data security.</value>
+  </data>
+  <data name="UsePurpose2" xml:space="preserve">
+    <value>We use your personal data only for the specified purposes.</value>
+  </data>
+  <data name="SecurityMeasures2" xml:space="preserve">
+    <value>We take all necessary precautions to ensure your data security.</value>
+  </data>
+  <data name="RightsDescription" xml:space="preserve">
+    <value>Under KVKK, you have rights to access, correct, delete, and object to your personal data. You can submit your requests regarding the processing of your personal data by exercising these rights.</value>
+  </data>
+  <data name="KVKK_Aydinlatma_Metni" xml:space="preserve">
+    <value>Kvkk Clarification Text</value>
+  </data>
+  <data name="KVKK_Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OurSystemPolicy" xml:space="preserve">
+    <value>Our System Policy</value>
+  </data>
+  <data name="SystemPolicyDescription" xml:space="preserve">
+    <value>We aim to produce quality products that are suitable for visuality and do not deviate from the standards by protecting nature, protecting nature, in order to be a company that manages to keep its name at the forefront in the sector without leaving the legislation of Environmental and OHS Management Programs by constantly developing with our professional staff.</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>Copyright 2024 All Rights Reserved</value>
+  </data>
+  <data name="instagram" xml:space="preserve">
+    <value>Follow us on instagram</value>
+  </data>
+  <data name="Certificates" xml:space="preserve">
+    <value>Certificates</value>
+  </data>
+</root>

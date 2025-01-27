@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Corporate" xml:space="preserve">
+    <value>Kurumsal</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Anasayfa</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>21 Kasım 2020</value>
+  </data>
+  <data name="LonelyTrip" xml:space="preserve">
+    <value>Yalnız bir yolculuk olacaktı.</value>
+  </data>
+  <data name="LoremText1" xml:space="preserve">
+    <value>&lt;p&gt;1989 yılında Sakarya Arifiye İlçesi'nde kurulan firmamız 300 m² alanda mevsimlik çiçek üretimi ve satışı ile faaliyet göstermeye başlamış olup geçen süre içerisinde büyüyerek sektörün marka firmalarından biri olmuştur.&lt;p&gt;
+
+&lt;p&gt;Bugün itibariyle 2.500.000 m²'ye yaklaşan üretim alanlarımız ve binlerce çeşit bitki yelpazemiz ile sektörün lider kuruluşu haline gelmiştir.&lt;/p&gt;
+
+&lt;p&gt;Modern teknolojinin en son imkanları ile gerçekleştirdiğimiz üretimimiz ekolojik koşullar açısından dünyanın en elverişli bölgelerinden biri olan Sakarya Havzası'nda yer alan Arifiye, Pamukova ve Yazlık Beldesi'ndedir.&lt;/b&gt;
+
+&lt;p&gt;Arifiye Fidancılık Türkiye’de ilk defa Sakarya İli'nde kurulan ve dış mekan süs bitkileri üretim alanı olan organize bölgenin kuruluş aşamasından itibaren her aşamasında destek olmuş ve organize bölgede de yerini almıştır. Türkiye pazarında önemli bir yere sahip olan şirketimizin başta gelen müşterileri belediyeler, peyzaj ve inşaat firmalarıdır. Arifiye Fidancılık sektörün ihracat konusunda da gelişmesini amaç edinerek mevcut ihracat yasasının bugünkü haliyle şekillenmesine ön ayak olmuştur. Yurtiçi pazarında önemli bir yere sahip olan Arifiye Fidancılık bu başarısını yurtdışı pazarında da göstermiştir. 2001 yılından itibaren yurt dışı pazarlarına girmeye başlamıştır. Türkî Cumhuriyetler, Rusya ve Arap ülkeleri ile ticaretimiz artarak devam etmektedir. Vizyonu Türkiye’de ki liderliğini ve uluslar arası arenadaki yerini korumak ve yükseltmek olan Arifiye Fidancılık dış mekân süs bitkilerinde kaliteli üretim ve müşteri memnuniyetini ön planda tutmaktadır. Mevcut üretim alanlarımızda renkler tüm tonlarıyla bir fide halinden koca bir ağaç olana kadar nasıl yaşattığımızı görmeniz için fidanlığımıza davet ediyoruz. Fidanlığımızda, showroomumuzda ve katılmış olduğumuz fuar ve etkinliklerde de sizleri aramızda görmekten onur duyarız.&lt;/p&gt;</value>
+  </data>
+  <data name="LoremHeader" xml:space="preserve">
+    <value>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</value>
+  </data>
+  <data name="GrowingCapacity" xml:space="preserve">
+    <value>Ürettikçe büyüyen &lt;/br&gt; kapasitemizle</value>
+  </data>
+  <data name="FutureGoal" xml:space="preserve">
+    <value>Gelecek için hedef daha&lt;br&gt; fazla üretim.</value>
+  </data>
+  <data name="Experience" xml:space="preserve">
+    <value>35 Yıllık Deneyim</value>
+  </data>
+  <data name="ProductionArea" xml:space="preserve">
+    <value>Üretim Alanları</value>
+  </data>
+  <data name="ExportedSeedlings" xml:space="preserve">
+    <value>980 Bin Fidan İhracatı</value>
+  </data>
+  <data name="CompanyDescription" xml:space="preserve">
+    <value>1989 yılında kurulan firmamız, her geçen gün kendini yenileyerek sizlere daha iyi hizmet verebilmek için çalışıyor. 900 den fazla ürün çeşitliliğimiz ve 25 ülkeye yaptığımız ihracatla tecrübemize ve ürünlerimize güveniyoruz.</value>
+  </data>
+  <data name="ProductionAreaHeader" xml:space="preserve">
+    <value>3000 Dönüm</value>
+  </data>
+  <data name="ProductionAreaDescription" xml:space="preserve">
+    <value>Üretim alanlarımız</value>
+  </data>
+  <data name="TotalProductionArea" xml:space="preserve">
+    <value>Toplam 3.000+ üretim alanımızla, Ürettikçe büyüyen kapasitemizle gelecek için hedef daha fazla üretim.</value>
+  </data>
+  <data name="AllProductionAreas" xml:space="preserve">
+    <value>Tüm üretim alanlarımız</value>
+  </data>
+  <data name="OurEffort" xml:space="preserve">
+    <value>Çabamız Büyük</value>
+  </data>
+  <data name="EffortDescription" xml:space="preserve">
+    <value>Dünya'yı değiştiremeyebiliriz belki ama çabamız büyük!</value>
+  </data>
+  <data name="CurrentProductionArea" xml:space="preserve">
+    <value>Mevcut üretim alanlarımızda renkleri tüm tonlarıyla bir fide halinden koca bir ağaç olana kadar yaşatıyoruz.</value>
+  </data>
+  <data name="CurrentProductionArea2" xml:space="preserve">
+    <value>Bugün itibariyle yaklaşık 3.000.000 m2 aşan üretim alanlarımız ve binlerce çeşit bitki yelpazemizle sektörde öncü bir marka olmanın gururunu yaşıyoruz.</value>
+  </data>
+  <data name="LastYearExport" xml:space="preserve">
+    <value>Sadece son 1 yılda 25 farklı ülkeye yaptığımız, 980 bin fidanımız ile hedefimizi her gün büyütüyoruz.</value>
+  </data>
+  <data name="ProductCatalog" xml:space="preserve">
+    <value>Ürün Kataloğu</value>
+  </data>
+  <data name="CatalogDescription" xml:space="preserve">
+    <value>Bu ürün kataloğunun açıklamasıdır.</value>
+  </data>
+  <data name="PromotionalFilm" xml:space="preserve">
+    <value>Arifiye Fidancılık Tanıtım Filmi</value>
+  </data>
+  <data name="FilmDescription" xml:space="preserve">
+    <value>Bu tanıtım filminin açıklamasıdır.</value>
+  </data>
+  <data name="CookiesPolicy" xml:space="preserve">
+    <value>Çerez Politikası</value>
+  </data>
+  <data name="CookiesDescription1" xml:space="preserve">
+    <value>
+
+ &lt;p&gt;Sizleri web sitemizde kullanılan çerez türleri, çerezlerin kullanım amaçları ve bu çerezlerin ayarları, yönetilmesi ve silinmesi hakkında bilgilendirmek isteriz.&lt;/p&gt;
+
+    &lt;p&gt;Web sitemizi şahsi herhangi bir bilgi vermeden ziyaret edebilir, ürünlerimiz ve hizmetlerimiz hakkında bilgi alarak ihtiyaçlarınızı karşılayabilirsiniz. Ziyaretlerde site kullanımına ilişkin bilgi toplamak için bazı çerezler kullanılmaktadır. Buradaki amacımız; web sitemizi ziyaret eden kullanıcıya kolaylık sağlamak ve işleyişi daha iyiye taşıyabilmektir.&lt;/p&gt;
+
+    &lt;h2 class="text-dark-green"&gt;Çerez Nedir?&lt;/h2&gt;
+
+    &lt;p&gt;Çerez, bir siteyi ziyaret ettiğinizde tarayıcınız aracılığıyla bilgisayarınıza veya mobil cihazınıza kaydedilen küçük boyutlu bir metin dosyasıdır. Çerezler bir sitenin daha verimli çalışmasının yanı sıra kişisel ihtiyaçlarınıza daha uygun ve hızlı bir ziyaret deneyimi yaşatmak için kişiselleştirilmiş sayfaların sunulabilmesine olanak vermektedir. Çerezler sadece internet ortamındaki ziyaret geçmişinize dair bilgiler içermekte olup, bilgisayarınızda veya mobil cihazınızda depolanmış dosyalara dair herhangi bir bilgi toplamamaktadır.&lt;/p&gt;
+
+    &lt;h2 class="text-dark-green"&gt;Çerez Türleri ve Kullanım Amaçları&lt;/h2&gt;
+
+    &lt;p&gt;Geçerlilik sürelerine göre Kalıcı Çerez ve Geçici Çerez olarak iki çerez tipi bulunmaktadır. Geçici çerezler internet sitesini ziyaret ettiğiniz esnada oluşur ve sadece tarayıcınızı kapatıncaya kadar geçerlidir. Kalıcı çerezler ise internet sitesini ziyaret ettiğinizde oluşur ve siz silinceye veya süreleri doluncaya kadar kalır. Ayarlarınız ile uyumlu kişiselleştirilmiş bir deneyim sunma gibi işlemler için kalıcı çerezler kullanılır.&lt;/p&gt;
+
+    &lt;p&gt;Çerez türleri ve kullanım amaçları aşağıda açıklanmaktadır:&lt;/p&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;Zorunlu Çerezler:&lt;/strong&gt; Web sitemizin doğru biçimde çalışması için zorunludur. Örneğin, kimlik doğrulama, mevcut oturumunuz ile ilgili bilgilerin kaybolmaması gibi amaçlarla zorunlu çerezler kullanılmaktadır. Bu çerezler güvenlik ve doğrulama gibi amaçlar için kullanılmakta olup, herhangi bir pazarlama amacı doğrultusunda kullanılmaz.&lt;/li&gt;
+
+        &lt;li&gt;&lt;strong&gt;İşlevsellik İçin Gerekli Olan Çerezler:&lt;/strong&gt; Web sitemizi ziyaret eden kullanıcıların tercihlerini hatırlamasına olanak sağlayan çerezlerdir. Örneğin ziyaretçinin dil tercihi veya metin font boyu seçiminin hatırlanmasını sağlar. Bu tür çerezlerin kullanımına izin verilmemesi size özel bir özelliğin kullanılmamasına neden olabilir ve tercihlerinizi hatırlamasını engeller.&lt;/li&gt;
+
+        &lt;li&gt;&lt;strong&gt;Performans ve Analiz İçin Gerekli Olan Çerezler:&lt;/strong&gt; Web sitemizin geliştirilmesine yardımcı olan çerezlerdir. Bu tür çerezler, ziyaretçilerin site kullanımları hakkında bilgiler toplar, sitenin gerektiği gibi çalışıp çalışmadığının denetiminde ve alınan hataların tespitinde kullanılır.&lt;/li&gt;
+
+        &lt;li&gt;&lt;strong&gt;Hedefleme ve Reklam Çerezleri:&lt;/strong&gt; Bu çerezler web sitemizde veya sitemiz haricindeki mecralarda ürün ve hizmet tanıtımını yapmak, iş birliği yaptığımız ortaklarımızla birlikte size ilgili ve kişiselleştirilmiş reklamlar göstermek, reklam kampanyalarının etkinliğini ölçmek için kullanılır.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h2 class="text-dark-green"&gt;Çerezler Nasıl Toplanır?&lt;/h2&gt;
+
+    &lt;p&gt;Veriler tarayıcılara eriştiğiniz cihazlarınız aracılığıyla toplanır. Toplanan bu bilgiler cihazlara özeldir. İstenildiği zaman kullanıcı tarafından silinebilmekte ve bilgilere erişim kapatılabilmektedir.&lt;/p&gt;
+
+    &lt;h2 class="text-dark-green"&gt;Gizlilik Politikamız&lt;/h2&gt;
+
+    &lt;p&gt;Gizliliğiniz bizim için önemlidir, gizlilik ve güvenlik haklarınız temel prensibimizdir. Bu kapsamda, kişisel verilerin korunmasına dair aydınlatma metnimize buradan ulaşabilirsiniz.&lt;/p&gt;
+
+    &lt;h2 class="text-dark-green"&gt;Çerezleri Nasıl Kontrol Edebilirsiniz?&lt;/h2&gt;
+
+    &lt;p&gt;Bilgisayarınızda hali hazırda bulunan çerezleri silebilir ve internet gezgininize çerez kaydedilmesini/yerleştirilmesini engelleyebilirsiniz.&lt;/p&gt;
+
+    &lt;p&gt;İnternet tarayıcıları çerezleri otomatik olarak kabul edecek şekilde ön tanımlıdır. Çerezleri yönetmek tarayıcıdan tarayıcıya farklılık gösterdiğinden ayrıntılı bilgi almak için tarayıcının veya uygulamanın yardım menüsüne bakabilirsiniz.&lt;/p&gt;
+
+    &lt;p&gt;Örnek olarak, "Google Chrome -&gt; Ayarlar -&gt; Gelişmiş -&gt; Gizlilik ve Güvenlik -&gt; Site Ayarları -&gt; Çerezler ve Site Verileri -&gt; Sitelerin çerez verilerini kaydetmelerine ve okumalarına izin ver" seçeneği ile yönetebilirsiniz.&lt;/p&gt;
+
+    &lt;p&gt;Çoğu Internet gezgini aşağıdakileri yapmanıza olanak tanır:&lt;/p&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;Kaydedilmiş çerezleri görüntüleme ve dilediklerinizi silme&lt;/li&gt;
+        &lt;li&gt;Üçüncü taraf çerezleri engelleme&lt;/li&gt;
+        &lt;li&gt;Belli sitelerden çerezleri engelleme&lt;/li&gt;
+        &lt;li&gt;Tüm çerezleri engelleme&lt;/li&gt;
+        &lt;li&gt;Internet gezginini kapattığınızda tüm çerezleri silme&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;Çerezleri silmeyi tercih ederseniz ilgili web sitesindeki tercihleriniz silinecektir. Ayrıca, çerezleri tamamen engellemeyi tercih ederseniz Arifiye Fidancılık'a ait web siteleri dahil olmak üzere birçok web sitesi ve dijital platform düzgün çalışmayabilir.&lt;/p&gt;
+
+    &lt;h3 class="text-dark-green"&gt;Mobil Cihazınızda Çerezleri Kontrol Etmek İçin&lt;/h3&gt;
+
+    &lt;h4 class="text-dark-green"&gt;Apple Cihazlarda:&lt;/h4&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;"Ayarlar -&gt; Safari -&gt; Geçmişi ve Web Sitesi Verilerini Sil" adımları ile tarama geçmişinizi ve çerezleri temizleyebilirsiniz.&lt;/li&gt;
+        &lt;li&gt;Çerezleri silip geçmişinizi tutmak için "Ayarlar -&gt; Safari -&gt; İleri Düzey -&gt; Web Sitesi Verileri -&gt; Tüm Web Sitesi Verilerini Sil" adımlarını izleyebilirsiniz.&lt;/li&gt;
+        &lt;li&gt;Siteleri ziyaret ederken geçmiş verilerinin tutulmasını istemiyorsanız; "Safari -&gt;  simgesi -&gt; Özel -&gt; Bitti" adımlarını izleyerek özel dolaşımı aktif hale getirebilirsiniz.&lt;/li&gt;
+        &lt;li&gt;"Ayarlar -&gt; Safari -&gt; Tüm Çerezleri Engelle" adımları ile çerezleri engelleyebilirsiniz. Ancak; çerezleri engellediğinizde bazı web siteleri ve özellikler düzgün çalışmayabilir.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h4 class="text-dark-green"&gt;Android Cihazlarda:&lt;/h4&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;"Chrome uygulaması -&gt; Ayarlar -&gt; Gizlilik -&gt; Tarama verilerini temizle -&gt; Çerezler, medya lisansları ve site verileri -&gt; Verileri Temizle" seçeneği ile çerezlerinizi temizleyebilirsiniz.&lt;/li&gt;
+        &lt;li&gt;"Chrome Uygulaması -&gt; Ayarlar -&gt; Site Ayarları -&gt; Çerezler" seçeneği ile çerezlere izin verebilir veya engelleyebilirsiniz.&lt;/li&gt;
+    &lt;/ul&gt;</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>İhracat</value>
+  </data>
+  <data name="ExportInfo" xml:space="preserve">
+    <value>1 yılda 25 ülke ve 980 bin fidan ihracatı</value>
+  </data>
+  <data name="ExportDescription1" xml:space="preserve">
+    <value>1989 yılında kurulan firmamız, her geçen gün kendini yenileyerek sizlere daha iyi hizmet verebilmek için çalışıyor.</value>
+  </data>
+  <data name="ExportDescription2" xml:space="preserve">
+    <value>900 den fazla ürün çeşitliliğimiz ve 25 ülkeye yaptığımız ihracatla tecrübemize ve ürünlerimize güveniyoruz.</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="AddressDescription" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates!</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Telefon Numarası</value>
+  </data>
+  <data name="PhoneNumberValue" xml:space="preserve">
+    <value>+90 555 555 55 55</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="EmailValue" xml:space="preserve">
+    <value>info@arifiyefidancilik.com</value>
+  </data>
+  <data name="FollowUs" xml:space="preserve">
+    <value>Takip Et</value>
+  </data>
+  <data name="GetDirections" xml:space="preserve">
+    <value>Yol Tarifi Al</value>
+  </data>
+  <data name="ArifiyeFidancilik" xml:space="preserve">
+    <value>Arifiye Fidancılık</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>Ad ve Soyadı</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>E-Posta Adresiniz</value>
+  </data>
+  <data name="YourPhone" xml:space="preserve">
+    <value>Telefon Numaranız</value>
+  </data>
+  <data name="YourMessage" xml:space="preserve">
+    <value>Mesajınız</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="KVKK" xml:space="preserve">
+    <value>KVKK</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Kalite Politikamız</value>
+  </data>
+  <data name="PrivacyPolicyDescription" xml:space="preserve">
+    <value>&lt;p &gt; Müşteri memnuniyeti temel olan bir yaklaşım ile kalite anlayışını benimsemiş, takım ruhuna sahip personelimiz ile, sektörel değişimleri, teknolojik gelişimleri ve müşterilerin müşteri ilişkilerini sürekli takip edip bünyemize adapte ederek, hizmetlerin politikamızdır.&lt;/p&gt;
+&lt;p&gt; Ayrıca;&lt;/p&gt;
+&lt;UL&gt;
+ &lt;LI&gt;
+ &lt;p &gt;Müşterinin raporlarının zamanında tespit edilmesi, taleplere hızlı yanıt verilmesi, zamanında sevkiyat, kaliteli ürün ve rekabetçi fiyatta olması,&lt;/p&gt;
+ &lt;LI&gt;
+ &lt;p&gt;Müşteri memnuniyetini sürekli kılmak adına yüksek teknoloji takip yönetimi ve etkin kullanımı,&lt;/p&gt;
+ &lt;LI&gt;
+ &lt;p&gt;Kaliteden tüm politikaların sorumlu olması anlayışını benimsemesi ve bu nedenle tüm personel kalite bilincinin esnek, bilgi ve yeteneklerini geliştirecek eğitimlerin sürdürülmesi, uyuma ve yaratıcılığın teşvik edilmesi,&lt;/p&gt;
+ &lt;LI&gt;
+ &lt;p&gt;Kişisel mutluluğunun ve motivasyonunun sürdürülmesi,&lt;/p&gt;
+ &lt;LI&gt;
+ &lt;p&gt;Sistemdeki ayrıntıların performans rejimine dayalı ölçülebilir, kalite hedeflerinin değerlendirilmesi yoluyla sistemin sürekli olarak, uygulanabilir şartlar da dikkate alınarak kalite anlayışının benimsenmesi&lt;/p&gt;
+&lt;/UL&gt;
+&lt;p&gt; kalite politikamızdır.&lt;/p&gt;
+&lt;p&gt; Bu doğrultuda kalite hedeflerimizi belirleyeceğimizi, hedeflerimizi sürekli gözden geçireceğimizi ve bu politikamızı tüm çalışanlarımız arasında yaygınlaştırmamızı sağlamayı amaçlıyoruz. &lt;/p&gt;
+&lt;p&gt; &lt;BR&gt;
+&lt;/p&gt;
+
+&lt;p&gt; &lt;em&gt;&lt;strong&gt; &lt;/strong&gt;&lt;/em&gt;&lt;strong&gt;GENEL MÜDÜR&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;Murat KAYA&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="DataCollectionPurposes" xml:space="preserve">
+    <value>Kişisel verileriniz, aşağıdaki amaçlarla toplanmaktadır:</value>
+  </data>
+  <data name="UsePurpose" xml:space="preserve">
+    <value>Kişisel verilerinizi yalnızca belirtilen amaçlar doğrultusunda kullanıyoruz.</value>
+  </data>
+  <data name="SecurityMeasures" xml:space="preserve">
+    <value>Veri güvenliğinizi sağlamak için gerekli tüm önlemleri alıyoruz.</value>
+  </data>
+  <data name="UsePurpose2" xml:space="preserve">
+    <value>Kişisel verilerinizi yalnızca belirtilen amaçlar doğrultusunda kullanıyoruz.</value>
+  </data>
+  <data name="SecurityMeasures2" xml:space="preserve">
+    <value>Veri güvenliğinizi sağlamak için gerekli tüm önlemleri alıyoruz.</value>
+  </data>
+  <data name="RightsDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="KVKK_Aydinlatma_Metni" xml:space="preserve">
+    <value>Kvkk Aydınlatma Metni</value>
+  </data>
+  <data name="KVKK_Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OurSystemPolicy" xml:space="preserve">
+    <value>Sistem Politikamız</value>
+  </data>
+  <data name="SystemPolicyDescription" xml:space="preserve">
+    <value>Profesyonel personelimiz ile sürekli gelişerek, Çevre ve İSG Yönetim Programları mevzuatından çıkmadan sektörde ismini ön planda tutmayı başaran bir firma olmak için, doğayı koruyarak, görselliğe uygun ve standartlardan şaşmayan kaliteli ürünler üretmeyi hedefliyoruz.</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>Copyright 2024 Her Hakkı Saklıdır</value>
+  </data>
+  <data name="instagram" xml:space="preserve">
+    <value>Bizi instagram'da takip edin</value>
+  </data>
+  <data name="Certificates" xml:space="preserve">
+    <value>Sertifikalar</value>
+  </data>
+</root>

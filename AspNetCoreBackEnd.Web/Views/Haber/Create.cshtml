@@ -1,0 +1,153 @@
+﻿@{
+    ViewData["Title"] = "Haber Create";
+    ViewBag.AHaber = "nav-active";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+
+
+}
+@section Scripts {
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
+    <script type="text/javascript" src="/Panel/vendor/bootstrap-maxlength/bootstrap-maxlength.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+
+
+    <script type="module" asp-append-version="true" src="/Ajax/crop.js"></script>
+    <script type="module" asp-append-version="true" src="/Ajax/viewer.js"></script>
+
+
+    <script type="module" asp-append-version="true" src="/Ajax/Haber/Haber.js"></script>
+    <script type="module" asp-append-version="true" src="/Ajax/Haber/HaberCreate.js"></script>
+}
+
+
+
+<button onclick="history.back()" class="btn btn-dark mb-3">
+    <i class="fa-solid fa-backward me-2"></i>Geri Dön
+</button>
+
+
+
+
+
+<section>
+    <form id="CreateForm" class="row">
+        <div class="col-lg-9">
+            <div class="card card-modern">
+                <div class="card-header border-bottom">
+                    <h5 class="font-weight-bold mb-0"><i class="fa-solid fa-circle-dot me-2"></i>Haber Ekleme Formu
+                    </h5>
+                </div>
+                <div class="card-body py-4">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group border-0 mb-3">
+                                <label class="form-label" for="orderNo">Order No </label>
+                                <input class="form-control" type="text" id="orderNo" required />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group border-0 mb-3">
+                                <label class="form-label" for="tr_Baslik">Başlık <b class="text-danger">tr</b></label>
+                                <input class="form-control" type="text" id="tr_Baslik" data-plugin-maxlength maxlength="75"
+                                    required />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group border-0 mb-3">
+                                <label class="form-label" for="en_Baslik">Başlık <b class="text-danger">en</b></label>
+                                <input class="form-control" type="text" id="en_Baslik" data-plugin-maxlength maxlength="75"
+                                       required />
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="form-group border-0 mb-3">
+                                <label class="form-label" for="tr_KisaAciklama">
+                                   Kısa Açıklama  <b class="text-danger">tr</b>
+                                </label>
+                                <textarea class="form-control " type="text" id="tr_KisaAciklama"
+                                          required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group border-0 mb-3">
+                                <label class="form-label" for="en_KisaAciklama">
+                                   Kısa Açıklama  <b class="text-danger">en</b>
+                                </label>
+                                <textarea class="form-control " type="text" id="en_KisaAciklama"
+                                          required></textarea>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-12">
+                            <div class="form-group border-0 mb-3">
+                                <label class="form-label" for="tr_Aciklama">
+                                    Açıklama  <b class="text-danger">tr</b>
+                                </label>
+                                <textarea class="form-control " type="text" id="tr_Aciklama"
+                                          ></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="form-group border-0 mb-3">
+                                <label class="form-label" for="en_Aciklama">
+                                    Açıklama  <b class="text-danger">en</b>
+                                </label>
+                                <textarea class="form-control " type="text" id="en_Aciklama"
+                                          ></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="card-footer py-4">
+                    <button type="submit" class="btn btn-success ms-2 px-3">
+                        Kaydet <i class="fa-solid fa-floppy-disk ms-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card card-modern mt-lg-0 mt-4" style="position:sticky; top:25px;">
+                <div class="card-header border-bottom">
+                    <h5 class="font-weight-bold mb-0"><i class="fa-solid fa-circle-dot me-2"></i>Resim Seç</h5>
+                </div>
+                <div class="card-body">
+                    @* start: MediaName *@
+                    <div class="form-group mt-2">
+                        <input class="form-control rounded-0" type="file" accept=".png, .jpg, .jpeg, .webp" data-width="1280" data-height="1280"
+                        id="MediaFile" required />
+                        <div class="image-gallery">
+                            <img src="/Panel/img/warning.jpg" id="croppedImage" class="w-100" alt="img" />
+                        </div>
+                    </div>
+                    @* end *@
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+
+@section Modals {
+    @await Html.PartialAsync("~/Views/Shared/Partials/_CropModalPartial.cshtml")
+}

@@ -1,0 +1,44 @@
+﻿@using AspNetCoreBackEnd.Web.Services
+@inject LanguageService _localization;
+@{
+    Layout = "_LayoutHome";
+}
+@section Styles {
+    <!--Util CSS-->
+    <link rel="stylesheet" href="assets/codframe/css/util.css">
+    <!-- My Style  -->
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <link rel="stylesheet" href="/Assets/css/style-inner-page.css">
+}
+
+
+<section>
+    <div class="inner-page-header">
+        <span class="bg" style="background-image: url('/Assets/images/slider/1.png');"></span>
+        <div class="overlay"></div>
+        <div class="position-relative h-100 w-100 container-site">
+            <div class="inner-line "></div>
+            <div class="header-content">
+                <h1 class="inner-title">@_localization.GetKey("KVKK")</h1>
+                <a href="@Url.Action("Index", "Home")">@_localization.GetKey("Home")</a> / <a href="@Url.Action("Kvkk", "Home")">@_localization.GetKey("KVKK")</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb100">
+    <div class="container max-width-sm margin-bottom-lg my-5 py-xl-5">
+        <div class="text-component text-component--relaxed text-center margin-bottom-md">
+            <h1 class="text-dark-green">@_localization.GetKey("KVKK_Aydinlatma_Metni")</h1>
+        </div>
+        <div class="flex justify-center">
+            <img src="/Assets/images/icon/a-icon.png" width="50" alt="">
+        </div>
+    </div>
+    <div class="container max-width-adaptive-sm">
+        <div class="text-component text-component--relaxed">
+            @Html.Raw(_localization.GetKey("KVKK_Description"))
+        </div>
+    </div>
+</section>
+

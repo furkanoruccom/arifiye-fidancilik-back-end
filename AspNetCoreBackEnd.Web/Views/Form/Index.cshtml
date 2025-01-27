@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    ViewBag.AForm = "nav-active";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="/Ajax/_dataTable/datatables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Ajax/_dataTable/table.css" rel="stylesheet" />
+}
+@section Scripts{
+    <script type="text/javascript" src="/Ajax/_dataTable/datatables.min.js"></script>
+    <script type="module" src="/Ajax/Form/table.js" asp-append-version="true"></script>
+}
+
+@if (TempData["FormMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["FormMessage"]</div>
+}
+
+<section>
+    <div class="card card-modern mb-2">
+        <div class="card-body">
+            <button class="btn btn-dark mb-lg-0 mb-3" onclick="reloadDataTable()">
+                Tablo Yenile
+                <i class="fa-solid fa-arrows-rotate ms-1"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="card card-modern mb-2">
+        <div class="card-body">
+
+            <div class="table-responsive">
+                <table id="example" class="display table  table-striped  bordered" style="width:100%">
+                    <thead class="bg-dark text-white table-head-position-sticky">
+                        <tr>
+                            <th style="max-width: 7px;width: 7px;"></th>
+                            <th>İsim ve Soyisim</th>
+                            <th>Mail</th>
+                            <th>Telefon</th>
+                            <th>Posizyon</th>
+                            <th>Cv</th>
+                            <th>Eklenme</th>
+                            <th style="width: 250px;"></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</section>

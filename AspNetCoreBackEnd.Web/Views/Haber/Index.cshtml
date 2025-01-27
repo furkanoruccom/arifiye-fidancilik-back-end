@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    ViewBag.AHaber = "nav-active";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="/Ajax/_dataTable/datatables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Ajax/_dataTable/table.css" rel="stylesheet" />
+}
+@section Scripts{
+    <script type="text/javascript" src="/Ajax/_dataTable/datatables.min.js"></script>
+    <script type="module" src="/Ajax/Haber/table.js" asp-append-version="true"></script>
+}
+
+@if (TempData["Haber    Message"] != null)
+{
+    <div class="alert alert-success">@TempData["HaberMessage"]</div>
+}
+
+<section>
+    <div class="card card-modern mb-2">
+        <div class="card-body">
+
+            <a href="/Haber/Create" class="btn btn-success mb-lg-0 mb-3">
+                Haber Ekle
+                <i class="fa-sharp fa-solid fa-plus ms-1 mx-1"></i>
+            </a>
+
+            <button class="btn btn-dark mb-lg-0 mb-3" onclick="reloadDataTable()">
+                Tablo Yenile
+                <i class="fa-solid fa-arrows-rotate ms-1"></i>
+            </button>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="card card-modern mb-2">
+        <div class="card-body">
+            @*start*@
+            <div class="table-responsive">
+                <table id="example" class="display table  table-striped  bordered" style="width:100%">
+                    <thead class="bg-dark text-white table-head-position-sticky">
+                        <tr>
+                            <th style="max-width: 7px;width: 7px;"></th>
+                            <th style="max-width: 7px;width: 7px;">#</th>
+                            <th>Başlık</th>
+                            <th>Eklenme</th>
+                            <th style="width: 250px;"></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            @*end*@
+        </div>
+    </div>
+</section>

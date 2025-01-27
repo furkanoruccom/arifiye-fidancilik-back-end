@@ -1,0 +1,39 @@
+﻿@using AspNetCoreBackEnd.Web.Services
+@inject LanguageService _localization;
+@{
+    Layout = "_LayoutHome";
+}
+
+<section>
+    <div class="inner-page-header">
+        <div class="inner-page-header">
+            <span class="bg" style="background-image: url('/Assets/images/slider/1.png');"></span>
+            <div class="overlay"></div>
+            <div class="position-relative h-100 w-100 container-site">
+                <div class="inner-line "></div>
+                <div class="header-content">
+                    <h1 class="inner-title">@_localization.GetKey("Certificates")</h1>
+                    <a href="@Url.Action("Index", "Home")">@_localization.GetKey("Home")</a> / <a href="@Url.Action("Certificates", "Home")">@_localization.GetKey("Certificates")</a>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section>
+    <div class="container mt100 mb100">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="/s1_b.jpg" data-fancybox="gal">
+                    <img src="/s1_b.jpg" class="w-100" />
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="/s2_b.jpg" data-fancybox="gal">
+                    <img src="/s2_b.jpg" class="w-100" />
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+

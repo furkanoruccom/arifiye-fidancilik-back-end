@@ -1,0 +1,41 @@
+﻿@using AspNetCoreBackEnd.Web.Services
+@inject LanguageService _localization;
+@{
+    Layout = "_LayoutHome";
+}
+
+<section>
+    <div class="inner-page-header">
+    <div class="inner-page-header">
+        <span class="bg" style="background-image: url('/Assets/images/slider/1.png');"></span>
+        <div class="overlay"></div>
+        <div class="position-relative h-100 w-100 container-site">
+            <div class="inner-line "></div>
+            <div class="header-content">
+                <h1 class="inner-title">@_localization.GetKey("Export")</h1>
+                <a href="@Url.Action("Index", "Home")">@_localization.GetKey("Home")</a> / <a href="@Url.Action("Export", "Home")">@_localization.GetKey("Export")</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="mt100 mb100 px-lg-0 px-3">
+        <div class="row flex-row-reverse">
+            <div class="col-lg-7 mb-5">
+                <img src="/Assets/images/harita.png" class="w-100" alt="Arifiye Fidancılık">
+            </div>
+            <div class="col-lg-3">
+                <h1 class="text-dark-green">@_localization.GetKey("ExportInfo")</h1>
+                <p class="text-dark-gray">
+                    @_localization.GetKey("ExportDescription1")
+                    <br>
+                    <br>
+                    @_localization.GetKey("ExportDescription2")
+                </p>
+            </div>
+            <div class="col-lg-2 d-lg-block d-none"></div>
+        </div>
+    </div>
+</section>
+

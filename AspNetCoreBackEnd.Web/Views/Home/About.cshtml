@@ -1,0 +1,108 @@
+﻿@using AspNetCoreBackEnd.Web.Services
+@inject LanguageService _localization;
+@{
+    Layout = "_LayoutHome";
+}
+<section>
+    <div class="inner-page-header">
+
+        <span class="bg" style="background-image: url('/Assets/images/slider/1.png');"></span>
+        <div class="overlay"></div>
+
+        <div class="position-relative h-100 w-100 container-site">
+            <div class="inner-line "></div>
+            <div class="header-content">
+
+                <h1 class="inner-title">@_localization.GetKey("Corporate")</h1>
+                <a href="@Url.Action("Index", "Home")">@_localization.GetKey("Home")</a> / <a href="@Url.Action("About", "Home")">@_localization.GetKey("Corporate")</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<section>
+
+    <!-- Component HTML -->
+    <div class="position-relative z-index-1 padding-y-lg mt100 mb100">
+        <div class="container max-width-adaptive-md">
+            <article class="t-article-v4 bg padding-md padding-x-lg@md padding-y-xl@md">
+                <div class="text-component text-component--relaxed text-center max-width-xs margin-x-auto">
+
+                    <h1 class="text-3xl text-dark-green mb-4">@_localization.GetKey("Corporate")</h1>
+                </div>
+                <div class="t-article-v4__divider margin-y-lg" aria-hidden="true"><span></span></div>
+                <div class="text-component text-component--relaxed">
+
+
+                        @Html.Raw(_localization.GetKey("LoremText1"))
+
+
+
+                </div>
+            </article>
+        </div>
+    </div><!-- End Component HTML -->
+
+</section>
+
+
+
+<section>
+    <div class="container home-about-area-two pt100">
+        <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+                <h1>@_localization.GetKey("OurEffort")</h1>
+                <strong class="text-dark-brown">@_localization.GetKey("EffortDescription")</strong>
+                <p class="text-dark-gray">
+                    @_localization.GetKey("CurrentProductionArea")
+                </p>
+                <p class="text-dark-gray">
+                    @_localization.GetKey("CurrentProductionArea2")
+
+                </p>
+                <p class="text-dark-gray mb150">
+                    @_localization.GetKey("LastYearExport")
+                </p>
+
+            </div>
+            <div class="col-lg-6 ps-lg-5" data-aos="fade-up">
+                <img src="/Assets/images/cabamiz-buyuk.png" class="w-100" alt="Arifiye Fidancılık" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="home-accordion-area" data-aos="fade-up">
+        <div class="container">
+            <img src="/Assets/images/icon/agac.png" alt="Arifiye Fidancılık" />
+
+            <div class="accordion-col">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <a href="/2018-Arifiye-Fidancilik-Katalog.pdf" target="_blank" class="accordion-button collapsed">
+                                @_localization.GetKey("ProductCatalog")
+                            </a>
+                        </h2>
+
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <a href="https://www.youtube.com/watch?v=jZthar0GPj4" target="_blank" class="accordion-button collapsed">
+                                @_localization.GetKey("PromotionalFilm")
+                            </a>
+                        </h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

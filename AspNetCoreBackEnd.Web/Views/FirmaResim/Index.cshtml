@@ -1,0 +1,92 @@
+﻿
+@model Firmalar
+@{
+    ViewData["Title"] = "Firma Media Index";
+    ViewBag.AFirma = "nav-active nav-expanded";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="/Ajax/_dataTable/datatables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Ajax/_dataTable/table.css" rel="stylesheet" />
+
+}
+@section Scripts{
+    <script type="text/javascript" src="/Ajax/_dataTable/datatables.min.js"></script>
+    <script type="text/javascript" src="/Ajax/FirmaResim/table.js"></script>
+}
+<input hidden id="firmaId" value="@Model.Id" />
+
+@if (TempData["FirmaResimMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["FirmaResimMessage"]</div>
+}
+
+<section class="card card-featured-left card-featured-primary mb-4">
+    <div class="card-body">
+        <div class="widget-summary widget-summary-xlg">
+            <div class="widget-summary-col widget-summary-col-icon">
+                <div class="summary-icon bg-primary">
+                    <i class="fa-solid fa-image"></i>
+                </div>
+            </div>
+            <div class="widget-summary-col">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="title">@Model.tr_Baslik </h4>
+                        <p class="mb-0">@Model.CreatedDate</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="alert alert-warning py-2">
+                            Bu sayfada "@Model.tr_Baslik" projesine ait resimler listelenir.
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-footer">
+                    <a class="text-muted text-uppercase" target="_blank" href="/Firma/Update/@Model.Id">(görüntüle)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="card card-modern mb-2">
+        <div class="card-body">
+            <a href="/FirmaResim/MultipleCreate/@Model.Id" class="btn btn-outline-success mb-lg-0 mb-3">
+                Resim Ekle
+                <i class="fa-sharp fa-solid fa-plus ms-1 mx-1"></i>
+            </a>
+
+            <button class="btn btn-dark mb-lg-0 mb-3" onclick="reloadDataTable()">
+                Tablo Yenile
+                <i class="fa-solid fa-arrows-rotate ms-1"></i>
+            </button>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="card card-modern mb-2">
+        <div class="card-body">
+            @*start*@
+            <div class="table-responsive">
+                <table id="example" class="display table  table-striped  bordered" style="width:100%">
+                    <thead class="bg-dark text-white table-head-position-sticky">
+                        <tr>
+                            <th style="max-width: 7px;width: 7px;"></th>
+                            <th>#</th>
+                            <th>Image</th>
+                            <th>Created</th>
+                            <th style="width: 250px;"></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            @*end*@
+        </div>
+    </div>
+</section>
+

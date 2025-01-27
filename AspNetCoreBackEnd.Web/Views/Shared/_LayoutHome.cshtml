@@ -1,0 +1,257 @@
+﻿@using AspNetCoreBackEnd.Web.Services
+@inject LanguageService _localization;
+@{
+    var lan = Thread.CurrentThread.CurrentCulture.Name;
+}
+
+<!DOCTYPE html>
+<html lang="tr" class="sidebar-left-big-icons">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Arifiye Fidancılık | @ViewData["Title"]</title>
+
+
+    <link rel="shortcut icon" href="/Assets/images/favicon.ico" type="image/x-icon">
+    <!-- Font-awesome CSS -->
+    <link rel="stylesheet" href="/Assets/css/fontawesome/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/Assets/css/bootstrap.min.css" />
+    <!-- Owl - Carousel CSS -->
+    <link rel="stylesheet" href="/Assets/owl//Assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Assets/owl//Assets/owl.theme.default.min.css">
+    <!-- Padding & Margin CSS -->
+    <link rel="stylesheet" href="/Assets/css/margin.css">
+    <link rel="stylesheet" href="/Assets/css/padding.css">
+    <!-- Pop-up Image  CSS -->
+    <link rel="stylesheet" href="/Assets/css/fancybox.css" />
+    <!-- Aos CSS -->
+    <link rel="stylesheet" href="/Assets/css/aos.css">
+    <!-- My Style  -->
+    <link rel="stylesheet" href="/Assets/css/style.css">
+
+    @await RenderSectionAsync("Styles", false)
+</head>
+<body class="loading-overlay-showing" data-loading-overlay>
+
+
+    <loader id="loader">
+        <section>
+            <div class="dots">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+                <span style="--i:8;"></span>
+                <span style="--i:9;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:15;"></span>
+            </div>
+        </section>
+    </loader>
+
+
+
+
+
+    <header>
+        <button class="btn-side-menu" onclick="toggleSidebar()">
+            <i class="fal fa-bars"></i>
+        </button>
+        <a href="@Url.Action("Index", "Home")" class="logo">
+            <img loading="lazy" src="/Assets/images/logo-white.svg" alt="Arifiye Fidancılık" />
+        </a>
+        <div class="lang">
+
+            @if (lan == "en-US")
+            {
+                <button class="lang-toggle btn btn-outline-light">en</button>
+            }
+            else
+            {
+                <button class="lang-toggle btn btn-outline-light">tr</button>
+            }
+            <div class="lang-menu">
+                @if (lan == "en-US")
+                {
+                    <a asp-controller="Home"
+                       asp-action="ChangeLanguage"
+                       asp-route-culture="tr-TR">tr</a>
+                    <a href="javascript:void(0);" class="active">en</a>
+                }
+                else
+                {
+                    <a href="javascript:void(0);" class="active">tr</a>
+                    <a asp-controller="Home"
+                       asp-action="ChangeLanguage"
+                       asp-route-culture="en-US">en</a>
+                }
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Structure -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+        <nav>
+            <a href="@Url.Action("Index", "Home")">@_localization.GetKey("Home")</a>
+            <a href="@Url.Action("About", "Home")">@_localization.GetKey("Corporate")</a>
+            <a href="/2018-Arifiye-Fidancilik-Katalog.pdf" target="_blank">@_localization.GetKey("ProductCatalog")</a>
+            <a href="@Url.Action("Export", "Home")">@_localization.GetKey("Export")</a>
+            @*<a href="@Url.Action("ProductionAreas", "Home")">@_localization.GetKey("ProductionArea")</a>
+            <a href="@Url.Action("Privacy", "Home")">@_localization.GetKey("PrivacyPolicy")</a>
+            <a href="@Url.Action("SystemPolicy", "Home")" >@_localization.GetKey("OurSystemPolicy")</a> *@
+    @*         <a href="@Url.Action("Kvkk", "Home")">@_localization.GetKey("KVKK")</a>
+            <a href="@Url.Action("Cookies", "Home")">@_localization.GetKey("CookiesPolicy")</a> *@
+            <a href="@Url.Action("Iletisim", "Home")">@_localization.GetKey("Contact")</a>
+        </nav>
+    </div>
+
+
+    @Html.AntiForgeryToken()
+
+
+
+
+
+
+    @RenderBody()
+
+
+    <section>
+        <div class="instagram-fallow-me pt50 pb50 bg-light-green" data-aos="fade-up">
+
+            <marquee class="w-100">
+                <a href="#" class="h1 fw-bold text-white pe-5">
+                    <i class="fab fa-instagram"></i> @_localization.GetKey("instagram")
+                </a>
+                <a href="#" class="h1 fw-bold text-white pe-5">
+                    <i class="fab fa-instagram"></i> @_localization.GetKey("instagram")
+                </a>
+                <a href="#" class="h1 fw-bold text-white pe-5">
+                    <i class="fab fa-instagram"></i> @_localization.GetKey("instagram")
+                </a>
+                <a href="#" class="h1 fw-bold text-white pe-5">
+                    <i class="fab fa-instagram"></i> @_localization.GetKey("instagram")
+                </a>
+                <a href="#" class="h1 fw-bold text-white pe-5">
+                    <i class="fab fa-instagram"></i> @_localization.GetKey("instagram")
+                </a>
+                <a href="#" class="h1 fw-bold text-white pe-5">
+                    <i class="fab fa-instagram"></i> @_localization.GetKey("instagram")
+                </a>
+                <a href="#" class="h1 fw-bold text-white pe-5">
+                    <i class="fab fa-instagram"></i> @_localization.GetKey("instagram")
+                </a> <a href="#" class="h1 fw-bold text-white pe-5">
+                    <i class="fab fa-instagram"></i> @_localization.GetKey("instagram")
+                </a>
+            </marquee>
+        </div>
+    </section>
+
+    <section>
+        <div class="row no-gap" data-aos="fade-up">
+            <div class="col">
+                <img class="w-100" src="/Assets/images/gallery/1.png">
+            </div>
+            <div class="col">
+                <img class="w-100" src="/Assets/images/gallery/2.png">
+            </div>
+            <div class="col">
+                <img class="w-100" src="/Assets/images/gallery/3.png">
+            </div>
+            <div class="col">
+                <img class="w-100" src="/Assets/images/gallery/4.png">
+            </div>
+            <div class="col">
+                <img class="w-100" src="/Assets/images/gallery/5.png">
+            </div>
+            <div class="col">
+                <img class="w-100" src="/Assets/images/gallery/6.png">
+            </div>
+            <div class="col">
+                <img class="w-100" src="/Assets/images/gallery/7.png">
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer" class="footer bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-col">
+                        <p class="text-dark-brown mb150">@_localization.GetKey("Copyright")</p>
+                        <img src="/Assets/images/logo-black.svg" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="footer-col">
+                                <a href="@Url.Action("Privacy", "Home")" class="text-dark-brown">@_localization.GetKey("PrivacyPolicy")</a><br>
+                                <a href="@Url.Action("SystemPolicy", "Home")" class="text-dark-brown">@_localization.GetKey("OurSystemPolicy")</a><br>
+                                <a href="@Url.Action("Kvkk", "Home")" class="text-dark-brown">@_localization.GetKey("KVKK")</a><br>
+                                <a href="@Url.Action("Cookies", "Home")" class="text-dark-brown">@_localization.GetKey("CookiesPolicy")</a><br>
+                                <a href="@Url.Action("Certificates", "Home")" class="text-dark-brown">@_localization.GetKey("Certificates")</a><br>
+                                <a href="@Url.Action("Iletisim", "Home")" class="text-dark-brown">@_localization.GetKey("Contact")</a><br>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="footer-col">
+                                <a href="@Url.Action("Index", "Home")" class="text-dark-brown">@_localization.GetKey("Home")</a><br>
+                                <a href="@Url.Action("About", "Home")" class="text-dark-brown">@_localization.GetKey("Corporate")</a><br>
+                                <a href="/2018-Arifiye-Fidancilik-Katalog.pdf" target="_blank" class="text-dark-brown">@_localization.GetKey("ProductCatalog")</a><br>
+                                <a href="@Url.Action("Export", "Home")" class="text-dark-brown">@_localization.GetKey("Export")</a><br>
+                                <a href="@Url.Action("ProductionAreas", "Home")" class="text-dark-brown">@_localization.GetKey("ProductionArea")</a><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/arifiyefidancilik/" target="_blank" class="text-dark-green"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100080485815986" target="_blank" class="text-dark-green"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/ArifiyeFidan" target="_blank" class="text-dark-green">
+                                <img src="~/assets/images/icon/x-twitter-brands-solid.svg" width="28" />
+                                </a>
+                            <a href="https://www.youtube.com/@@arifiyefidanciliktr" target="_blank" class="text-dark-green"><i class="fab fa-youtube"></i></a>
+                            <a href="mailto:info@arifiyefidancilik.com" target="_blank" class="text-dark-green"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.google.com/maps?rlz=1C1GCEU_trTR1051TR1051&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYQDIHCAMQABiABDIICAQQABgWGB4yBggFEEUYPTIGCAYQRRg8MgYIBxBFGDzSAQgzMzQ0ajBqN6gCALACAA&um=1&ie=UTF-8&fb=1&gl=tr&sa=X&geocode=KadQCz4DrswUMW9bdDuVP9ZL&daddr=Arifbey,+Z%C3%BCbeyde+Han%C4%B1m+Cd.+No:178,+54580+Arifiye/Sakarya" target="_blank" class="text-dark-green"><i class="fas fa-map-marker-alt"></i></a>
+                            <a href="tel:0 264 229 08 92" target="_blank" class="text-dark-green"><i class="fas fa-phone-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="/Assets/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery JS -->
+    <script type="text/javascript" src="/Assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Owl - Carousel JS -->
+    <script type="text/javascript" src="/Assets/owl/owl.carousel.min.js"></script>
+    <!-- Pop-up Image  JS -->
+    <script type="text/javascript" src="/Assets/js/fancybox.umd.js"></script>
+    <!-- Aos JS -->
+    <script type="text/javascript" src="/Assets/js/aos.js"></script>
+    <!-- Util JS -->
+    <script type="text/javascript" src="/Assets/codframe/js/util.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="/Assets/js/script.js"></script>
+
+
+    @await RenderSectionAsync("Scripts", false)
+
+</body>
+</html>

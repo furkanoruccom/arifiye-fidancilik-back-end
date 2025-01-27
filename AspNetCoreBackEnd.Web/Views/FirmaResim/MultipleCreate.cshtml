@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Firma Media Create";
+    ViewBag.AFirma = "nav-active nav-expanded";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css"/>
+}
+@section Scripts{
+    <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js" ></script>
+    <script type="text/javascript" src="/Panel/vendor/bootstrap-maxlength/bootstrap-maxlength.js"></script>
+
+    <script type="module" asp-append-version="true" src="/Ajax/FirmaResim/FirmaResim.js"></script>
+    <script type="module" asp-append-version="true" src="/Ajax/FirmaResim/FirmaResimMultipleCreate.js"></script>
+}
+<input hidden id="firmaId" value="@Model.Id" />
+
+<div>
+    <button onclick="history.back()" class="btn btn-dark mb-3">
+        <i class="fa-solid fa-backward me-2"></i>Geri Dön
+    </button>
+
+
+    <form id="CreateForm" class="row">
+        <div class="col-lg-12">
+            <div class="card card-modern">
+                <div class="card-header border-bottom">
+                    <h5 class="font-weight-bold mb-0"><i class="fa-solid fa-circle-dot me-2"></i>Proje Medya Ekleme Formu</h5>
+                </div>
+                <div class="card-body py-4">
+                    @* start: MediaFile *@
+                    <div class="form-group border-0 mb-3">
+                        <label class="form-label" for="MediaFile">Resim Seç <b class="text-danger">*</b></label>
+                        <input class="form-control rounded-0" type="file" multiple accept=".png, .jpg, .jpeg, .webp" id="MediaFile" data-width="1920" data-height="1080" required />
+                    </div>
+                    @* end *@
+                </div>
+                <div class="card-footer py-4 border-top">
+                    <button type="submit" class="btn btn-success ms-2 px-4">
+                        Kaydet <i class="fa-solid fa-floppy-disk ms-1"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</div>
+
+

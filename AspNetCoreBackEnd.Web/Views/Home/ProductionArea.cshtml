@@ -1,0 +1,125 @@
+﻿@using AspNetCoreBackEnd.Web.Services
+@using AspNetCoreBackEnd.Web.Helpers
+@model Firmalar
+@inject LanguageService _localization;
+@{
+    var lan = Thread.CurrentThread.CurrentCulture.Name;
+    Layout = "_LayoutHome";
+}
+
+@section Styles {
+
+    <link href="~/assets/fotoroma/fotorama.css" rel="stylesheet" />
+}
+@section Scripts {
+    <script src="~/assets/fotoroma/fotorama.js"></script>
+
+}
+
+<section>
+    <div class="inner-page-header">
+
+        <span class="bg" style="background-image: url('/Assets/images/slider/1.png');"></span>
+        <div class="overlay"></div>
+
+        <div class="position-relative h-100 w-100 container-site">
+            <div class="inner-line "></div>
+            <div class="header-content">
+                @if (lan == "en-US")
+                {
+                    <h1 class="inner-title">@Model.en_Baslik</h1>
+                    <a href="index.html">Anasayfa</a>
+                    <span>/</span> <a href="/UretimAlanlari">@_localization.GetKey("ProductionArea")</a>
+                    <span>/</span> <a href="/UretimAlanlari">@Model.en_Baslik</a>
+                }
+                else
+                {
+                    <h1 class="inner-title">@Model.tr_Baslik</h1>
+                    <a href="index.html">Anasayfa</a>
+                    <span>/</span> <a href="/UretimAlanlari">@_localization.GetKey("ProductionArea")</a> 
+                    <span>/</span> <a href="/UretimAlanlari">@Model.tr_Baslik</a>
+                }
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<section>
+    <div class="home-product-area pt-5 pb100">
+        <div class="header-area">
+            @if (lan == "en-US")
+            {
+                <h1>@Model.en_Buttons</h1>
+                <p>@Model.en_Baslik</p>
+            }
+            else
+            {
+
+                <h1>@Model.tr_Buttons</h1>
+                <p>@Model.tr_Baslik</p>
+            }
+        </div>
+        <div class="container">
+            @if (lan == "en-US")
+            {
+
+
+                // Kelimeleri ',' karakterine göre ayırıyoruz
+                var buttonList = Model.en_Buttons.Split(',');
+
+                foreach (var button in buttonList)
+                {
+                    <a href="#"
+                       class="btn mb-3 bg-dark-green text-white fw-bold radius-30 px-4">
+                        @button
+                    </a>
+                }
+            }
+            else
+            {
+
+
+                // Kelimeleri ',' karakterine göre ayırıyoruz
+                var buttonList = Model.tr_Buttons.Split(',');
+
+                foreach (var button in buttonList)
+                {
+                    <a href="#"
+                       class="btn mb-3 bg-dark-green text-white fw-bold radius-30 px-4">
+                        @button
+                    </a>
+                }
+            }
+
+
+            <!-- Add images to <div class="fotorama"></div> -->
+            <div class="fotorama" data-nav="thumbs" data-thumbwidth="80" data-thumbheight="90"
+                 data-allowfullscreen="native">
+                <img src="/Uploads/@Model.MediaName">
+                @foreach (var item in Model.FirmaResimleri)
+                {
+                    <img src="/Uploads/@item.MediaName">
+                }
+            </div>
+
+
+
+            <div class="py-5">
+                @if (lan == "en-US")
+                {
+                    @Html.Raw(Model.en_Aciklama)
+                }
+                else
+                {
+                    @Html.Raw(Model.tr_Aciklama)
+                }
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,231 @@
+﻿@using AspNetCoreBackEnd.Web.Services
+@using AspNetCoreBackEnd.Web.Helpers
+@inject LanguageService _localization;
+@model List<Firmalar>
+@{
+    Layout = "_LayoutHome";
+    var lan = Thread.CurrentThread.CurrentCulture.Name;
+}
+@* @model HomePageData *@
+
+@section Scripts {
+
+}
+
+<section>
+    <div class="slider">
+        <div class="owl-carousel owl-theme owl-slide">
+            <div class="item">
+                <div class="slider-item">
+                    <span class="bg" style="background-image: url(/Assets/images/slider/1.png);"></span>
+                    <div class="overlay"></div>
+                    <div class="container position-relative">
+                        <div class="slider-content">
+                            <h1>
+                                @Html.Raw(_localization.GetKey("GrowingCapacity"))
+
+                            </h1>
+                            <h1>
+                                @Html.Raw(@_localization.GetKey("FutureGoal"))
+                            </h1>
+                            <a href="@Url.Action("Index", "Home")" class="mb-3 btn bg-dark-green text-white radius-30 px-4">
+                                @_localization.GetKey("Experience")
+                            </a>
+                            <a href="@Url.Action("Index", "Home")" class="mb-3 btn bg-dark-gray text-white radius-30 px-4">
+                                @_localization.GetKey("ProductionArea")
+                            </a>
+                            <a href="@Url.Action("Index", "Home")" class="mb-3 btn bg-light-green text-white radius-30 px-4">
+                                @_localization.GetKey("ExportedSeedlings")
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-item">
+                    <span class="bg" style="background-image: url(/Assets/images/slider/2.png);"></span>
+                    <div class="overlay"></div>
+                    <div class="container position-relative">
+                        <div class="slider-content">
+                            <h1>
+                                @Html.Raw(_localization.GetKey("GrowingCapacity"))
+                            </h1>
+                            <h1>
+                                @Html.Raw(@_localization.GetKey("FutureGoal"))
+                            </h1>
+                            <a href="@Url.Action("Index", "Home")" class="mb-3 btn bg-dark-green text-white radius-30 px-4">
+                                @_localization.GetKey("Experience")
+                            </a>
+                            <a href="@Url.Action("Index", "Home")" class="mb-3 btn bg-dark-gray text-white radius-30 px-4">
+                                @_localization.GetKey("ProductionArea")
+                            </a>
+                            <a href="@Url.Action("Index", "Home")" class="mb-3 btn bg-light-green text-white radius-30 px-4">
+                                @_localization.GetKey("ExportedSeedlings")
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="home-about-area bg-dark-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-8" data-aos="fade-up">
+                    <div class="home-about-content">
+                        <img src="/Assets/images/icon/a-icon.png" class="mb-4" alt="">
+                        <p class="text-white">
+                            @_localization.GetKey("CompanyDescription")
+                        </p>
+                        <img src="/Assets/images/icon/33yil.png" class="yil-icon" alt="" data-aos="fade-up">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4" data-aos="fade-up">
+                    <div class="home-about-img">
+                        <img src="/Assets/images/erolkaya.png" alt="Arifiye Fidancılık" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="home-product-area">
+        <div class="header-area" data-aos="fade-up">
+            <h1>@_localization.GetKey("ProductionAreaHeader")</h1>
+            <p>@_localization.GetKey("ProductionAreaDescription")</p>
+        </div>
+        <div class="container">
+
+
+            @foreach (var item in Model.Take(4))
+            {
+                <div class="home-product-item">
+
+                    <span class="bg" style="background-image: url('/Uploads/@item.MediaName');"></span>
+
+                    @if (lan == "en-US")
+                    {
+                        <a href="/UretimAlani/@UrlFormatter.Format(item.en_Baslik)/@item.Id">
+                            <div class="overlay"></div>
+                        </a>
+                    }
+                    else
+                    {
+                        <a href="/UretimAlani/@UrlFormatter.Format(item.tr_Baslik)/@item.Id">
+                            <div class="overlay"></div>
+                        </a>
+                    }
+
+                    <div class="product-content">
+
+                        @if (lan == "en-US")
+                        {
+                            <h3 class="mb-3">@item.en_Baslik</h3>
+
+                            // Kelimeleri ',' karakterine göre ayırıyoruz
+                            var buttonList = item.en_Buttons.Split(',');
+
+                            foreach (var button in buttonList)
+                            {
+                                <a href="#"
+                                   class="btn mb-3 bg-light text-dark-green fw-bold radius-30 px-4">
+                                    @button
+                                </a>
+                            }
+                        }
+                        else
+                        {
+                            <h3 class="mb-3">@item.tr_Baslik</h3>
+
+                            // Kelimeleri ',' karakterine göre ayırıyoruz
+                            var buttonList = item.tr_Buttons.Split(',');
+
+                            foreach (var button in buttonList)
+                            {
+                                <a href="#"
+                                   class="btn mb-3 bg-light text-dark-green fw-bold radius-30 px-4">
+                                    @button
+                                </a>
+                            }
+                        }
+
+
+
+
+                    </div>
+                </div>
+            }
+
+
+            <div class="text-center" data-aos="fade-up">
+                <p class="text-dark-brown">
+                    @_localization.GetKey("TotalProductionArea")
+                </p>
+                <a href="production-areas.html" class="btn bg-light-green text-white radius-30 px-4">@_localization.GetKey("AllProductionAreas")</a>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container home-about-area-two pt100">
+        <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+                <h1>@_localization.GetKey("OurEffort")</h1>
+                <strong class="text-dark-brown">@_localization.GetKey("EffortDescription")</strong>
+                <p class="text-dark-gray">
+                    @_localization.GetKey("CurrentProductionArea")
+                </p>
+                <p class="text-dark-gray">
+                    @_localization.GetKey("CurrentProductionArea2")
+
+                </p>
+                <p class="text-dark-gray mb150">
+                    @_localization.GetKey("LastYearExport")
+                </p>
+
+            </div>
+            <div class="col-lg-6 ps-lg-5" data-aos="fade-up">
+                <img src="/Assets/images/cabamiz-buyuk.png" class="w-100" alt="Arifiye Fidancılık" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="home-accordion-area" data-aos="fade-up">
+        <div class="container">
+            <img src="/Assets/images/icon/agac.png" alt="Arifiye Fidancılık" />
+
+            <div class="accordion-col">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <a href="/2018-Arifiye-Fidancilik-Katalog.pdf" target="_blank" class="accordion-button collapsed" >
+                                @_localization.GetKey("ProductCatalog")
+                            </a>
+                        </h2>
+
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <a href="https://www.youtube.com/watch?v=jZthar0GPj4" target="_blank" class="accordion-button collapsed">
+                                @_localization.GetKey("PromotionalFilm")
+                            </a>
+                        </h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
