@@ -1,7 +1,7 @@
 ﻿using AspNetCoreBackEnd.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KioskBackEnd.Web.Controllers
+namespace BackEnd.Web.Controllers
 {
 
     //[Authorize(Roles = "Admin")]
